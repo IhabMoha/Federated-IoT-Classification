@@ -5,3 +5,5 @@ This repo provides code for preprocessing and classification of IoT devices usin
 2. **Feature Extraction:** configurable Python code for extracting features from the generated flows in the preprocessing part.
 3. **Machine Learning (ML):** Python code that uses TensorFlow and Keras for training a model for IoT device classification.
 4. **Federated Learning (FL):** Python code that uses TnesorFlow Federated library for IoT device classification in federated settings.
+
+# The code will be available once the research paper is published.
