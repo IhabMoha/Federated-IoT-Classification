@@ -56,9 +56,6 @@ class Logger(object):
         self.log.write(message)  
 
     def flush(self):
-        #this flush method is needed for python 3 compatibility.
-        #this handles the flush command by doing nothing.
-        #you might want to specify some extra behavior here.
         pass    
 
 sys.stdout = Logger()
@@ -83,7 +80,7 @@ print_line()
 print(tff.federated_computation(lambda: 'TensorFlow Federated is working -_-')())
 
 # Load data from file using Pandas
-IoT_features = pd.read_csv('/home/shadha/Dropbox/Development/IoT/csv_files/features_2016_10Min.csv', sep=',')
+IoT_features = pd.read_csv('/home/user/csv_files/features_2016_10Min.csv', sep=',')
 print_line()
 
 
@@ -131,11 +128,7 @@ fat_clients_ratio = 0.20
 no_thin_clients = int(n_clients * thin_clients_ratio)
 no_fat_clients = n_clients - no_thin_clients
 
-#thin_train_data_ratio = 0.05
-#thin_train_data_ratio = 0.10
 thin_train_data_ratio = 0.01
-#fat_train_data_ratio = 0.20
-#fat_train_data_ratio = 0.25
 fat_train_data_ratio = 0.10
 datasize_per_thin = int(thin_train_data_ratio * train_data_size)
 datasize_per_fat = int(fat_train_data_ratio * train_data_size)
