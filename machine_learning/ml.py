@@ -19,19 +19,7 @@ print('Using TensorFlow version: ', tf.__version__)
 print('Using Pandas version: ', pd.__version__)
 
 # Load data from file using Pandas
-IoT_features = pd.read_csv('/home/shadha/Dropbox/Development/IoT/csv_files/features_2016_10M.csv', sep=',')
-#IoT_features = pd.read_csv('/home/shadha/Dropbox/Development/IoT/csv_files/features_2016.csv', sep=',')
-#IoT_features = pd.read_csv('/mnt/2c210f3b-e32b-49d4-aaa1-39a15f48ae86/IoT_Dataset/csv_files/features_2018.csv', sep=',')
-#IoT_features = pd.read_csv('/mnt/2c210f3b-e32b-49d4-aaa1-39a15f48ae86/IoT_Dataset/csv_files/features_all.csv', sep=',')
-
-############################################################
-# Deleting Unwanted Features
-############################################################
-#IoT_features.pop('dns_interval')
-#IoT_features.pop('ntp_interval')
-#IoT_features.pop('uniq_dns')
-#IoT_features.pop('num_protocols')
-
+IoT_features = pd.read_csv('/home/user/csv_files/features_2016_10M.csv', sep=',')
 
 ############################################################
 # Normalization
