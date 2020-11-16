@@ -23,8 +23,7 @@ avg_acc_list = [[[[] for y in range(no_algs)] for x in range(no_Rs)] for n in ra
 fat_per_list = [[[[] for y in range(no_algs)] for x in range(no_Rs)] for n in range(no_Ns)]
 
 # Load results
-#results_file_name = '/home/shadha/Dropbox/Development/IoT/Results/Final'
-results_file_name = 'C:\\Users\\14792\\Dropbox\\Development\\IoT\\Results\\Final'
+results_file_name = '/home/user/Results/Final'
 results_file_name += '_Rounds_' + str(no_comm_rounds) +'_Epochs_' + str(client_no_of_epoches)
 results_file_name += '_Clients_Fat' + str(fat_clients_ratio) +'_Thin_' + str(thin_clients_ratio)
 results_file_name += '_Data_Fat_' + str(fat_train_data_ratio) +'_Thin_' + str(thin_train_data_ratio) + '.csv'
