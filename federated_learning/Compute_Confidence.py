@@ -27,7 +27,7 @@ for run_co in range(no_runs):
     print('Run number', run_co+1)
 
     # Read results
-    results_file_name = '/home/shadha/Dropbox/Development/IoT/Results/Results_Run_' + str(run_co+1)
+    results_file_name = '/home/user/Results/Results_Run_' + str(run_co+1)
     results_file_name += '_N_' + str(n_clients)
     results_file_name += '_Rounds_' + str(no_comm_rounds) +'_Epochs_' + str(client_no_of_epoches)
     results_file_name += '_Clients_Fat' + str(fat_clients_ratio) +'_Thin_' + str(thin_clients_ratio)
@@ -68,7 +68,7 @@ for r_co in range(no_Rs):
         confid_list[r_co][alg_co].append(cf_res[1])
 
 # Save results
-results_file_name = '/home/shadha/Dropbox/Development/IoT/Results/Confidence_N_' + str(n_clients)
+results_file_name = '/home/user/Results/Confidence_N_' + str(n_clients)
 results_file_name += '_Rounds_' + str(no_comm_rounds) +'_Epochs_' + str(client_no_of_epoches)
 results_file_name += '_Clients_Fat' + str(fat_clients_ratio) +'_Thin_' + str(thin_clients_ratio)
 results_file_name += '_Data_Fat_' + str(fat_train_data_ratio) +'_Thin_' + str(thin_train_data_ratio) + '.csv'
