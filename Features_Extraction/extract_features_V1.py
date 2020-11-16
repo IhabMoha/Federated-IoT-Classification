@@ -37,10 +37,10 @@ NTP interval: total time for using NTP
 period_time = 60 * 60  # seconds
 
 # Prepare writer to write extracted features for device_co
-features_file_name = '/home/shadha/Dropbox/Development/IoT/csv_files/features_2016_60Min.csv'
-#features_file_name = '/home/shadha/Dropbox/Development/IoT/csv_files/features_2018_60Min.csv'
-#features_file_name = '/home/shadha/Dropbox/Development/IoT/csv_files/features_all_60Min.csv'
-#stats_file_name = '/mnt/36b434f8-0c0f-4a09-9e0d-abc7ddcd8e82/IoT_Datasetcsv_files/stats.csv'
+features_file_name = '/home/user/csv_files/features_2016_60Min.csv'
+#features_file_name = '/home/user/csv_files/features_2018_60Min.csv'
+#features_file_name = '/home/user/csv_files/features_all_60Min.csv'
+#stats_file_name = '/home/user/stats.csv'
 
 features_csv = open(features_file_name, 'w')
 features_writer = csv.writer(features_csv, delimiter=',')
@@ -55,7 +55,7 @@ for device_co in range(1, 25):
     #for day_co in range(21, 48):   # for 2018 dataset
     #for day_co in range(1, 48):    # for 2016+2018 dataset
         # Read flows from flows file containing 1 day data
-        flows_file_name = '/home/shadha/json_files/' + str(day_co) + '_' + str(device_co) + '.json'
+        flows_file_name = '/home/user/json_files/' + str(day_co) + '_' + str(device_co) + '.json'
         print('Processing ' + flows_file_name + ' ...')
         flows_file = open(flows_file_name, 'r')
         flows = flows_file.readlines()
