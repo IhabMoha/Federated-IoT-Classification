@@ -12,4 +12,5 @@ To start, do the following steps:
 2. Download all pcap files from the dataset website to the pcap_files folder (2016->20 files, 2018->27 files).
 3. Run joy_v2_IoT_devices_2016.sh (in shell-scripts folder) to generate json files in the json_files folder for the 2016 dataset
 4. Run joy_v2_IoT_devices_2018.sh (in shell_scripts folder) to generate json files in the json_files folder for the 2018 dataset
+
 *Note: regarding steps 3 and 4, joy will generate one json file for every iot device per pcap file*
